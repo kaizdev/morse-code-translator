@@ -23,16 +23,14 @@ export const englishToMorseCode = (englishString) => {
         throw notAStringError;
     }
 
-    if (!/^[a-z A-Z]*$/g.test(englishString)) {
+    if (!/^[a-z ]*$/gi.test(englishString)) {
         throw notAlphabetCharacterError;
     }
 
     for (let i in englishString) {
         const letter = englishString[i].toUpperCase();
         const morseCodeTranslation = morseCodeObject[letter];
-        morseCodeTranslation
-            ? morseCodeArray.push(morseCodeTranslation)
-            : morseCodeArray.push("/");
+        morseCodeArray.push(morseCodeTranslation);
     }
     return morseCodeArray.join(" ");
 };
@@ -51,9 +49,7 @@ export const morseCodeToEnglish = (morseCodeString) => {
     const morseCodeArray = morseCodeString.split(" ");
     for (let value of morseCodeArray) {
         const englishTranslation = morseCodeObjectReversed[value];
-        englishTranslation
-            ? englishArray.push(englishTranslation)
-            : englishArray.push(" ");
+        englishArray.push(englishTranslation);
     }
 
     return englishArray.join("");

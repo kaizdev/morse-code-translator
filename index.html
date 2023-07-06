@@ -20,42 +20,46 @@
                 . -. --. .-.. .. ... .... / - --- / -- --- .-. ... . / -.-. ---
                 -.. .
             </h3>
-            <div class="instructions">
-                <p>Instructions:</p>
-                <p>
-                    English words and letters are accepted for translation.
-                    Numbers and special characters are not translated.
-                </p>
-                <p>
-                    Each english letter will be translated to morse code with a
-                    space representing a new letter. Each word will be separated
-                    using a forward slash (/)
-                </p>
-
-                <p>
-                    Morse Code must be entered as periods, dashes, spaces or
-                    forward slash
-                </p>
-            </div>
         </header>
         <main>
-            <div class="translation">
-                <div class="translation__input-container">
-                    <label for="englishInput">English:</label>
-                    <textarea
-                        id="englishInput"
-                        placeholder="Enter letters or words to translate to Morse Code"
-                    ></textarea>
+            <div class="content-container">
+                <div class="instructions">
+                    <p>Instructions:</p>
+                    <p>
+                        English words and letters are accepted for translation.
+                        Numbers and special characters are not translated.
+                    </p>
+                    <p>
+                        Each english letter will be translated to morse code
+                        with a space representing a new letter. Each word will
+                        be separated using a forward slash (/)
+                    </p>
+
+                    <p>
+                        Morse Code must be entered as periods, dashes, spaces or
+                        forward slash
+                    </p>
                 </div>
-                <div class="translation__input-container">
-                    <label for="morseInput">Morse Code:</label>
-                    <textarea
-                        id="morseInput"
-                        placeholder="Enter Morse code to translate to English"
-                    ></textarea>
+
+                <div class="translation">
+                    <div class="translation__input-container">
+                        <label for="englishInput">English:</label>
+                        <textarea
+                            id="englishInput"
+                            placeholder="Enter letters or words to translate to Morse Code"
+                        ></textarea>
+                    </div>
+                    <div class="translation__input-container">
+                        <label for="morseInput">Morse Code:</label>
+                        <textarea
+                            id="morseInput"
+                            placeholder="Enter Morse code to translate to English"
+                        ></textarea>
+                    </div>
                 </div>
             </div>
         </main>
+
         <button id="resetBtn">Reset inputs</button>
         <div class="fun-facts">
             <p>Interesting facts about Morse Code:</p>

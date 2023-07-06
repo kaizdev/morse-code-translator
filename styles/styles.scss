@@ -6,12 +6,6 @@ body {
     background-color: #dddddd;
 }
 
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .translation {
     text-align: center;
     width: 90%;
@@ -67,4 +61,14 @@ div > p:first-child {
     display: block;
     font-size: 20px;
     border-radius: 5px;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 600px) {
+        flex-direction: column-reverse;
+    }
 }

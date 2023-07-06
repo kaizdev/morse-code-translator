@@ -25,6 +25,7 @@ export const morseCodeObject = {
     X: "-..-",
     Y: "-.--",
     Z: "--..",
+    " ": "/",
 };
 
 export const morseCodeObjectReversed = Object.fromEntries(
