@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Raleway"
+        />
+        <script src="./scripts/script.js" defer type="module"></script>
+        <script src="./scripts/dom-utils.js" defer type="module"></script>
+
+        <title>Morse Code Translator</title>
+    </head>
+    <body>
+        <header>
+            <h1>English <> Morse Code Translator</h1>
+            <h3>
+                . -. --. .-.. .. ... .... / - --- / -- --- .-. ... . / -.-. ---
+                -.. .
+            </h3>
+            <div class="instructions">
+                <p>Instructions:</p>
+                <p>
+                    English words and letters are accepted for translation.
+                    Numbers and special characters are not translated.
+                </p>
+                <p>
+                    Each english letter will be translated to morse code with a
+                    space representing a new letter. Each word will be separated
+                    using a forward slash (/)
+                </p>
+
+                <p>
+                    Morse Code must be entered as periods, dashes, spaces or
+                    forward slash
+                </p>
+            </div>
+        </header>
+        <main>
+            <div class="translation">
+                <div class="translation__input-container">
+                    <label for="englishInput">English:</label>
+                    <textarea
+                        id="englishInput"
+                        placeholder="Enter letters or words to translate to Morse Code"
+                    ></textarea>
+                </div>
+                <div class="translation__input-container">
+                    <label for="morseInput">Morse Code:</label>
+                    <textarea
+                        id="morseInput"
+                        placeholder="Enter Morse code to translate to English"
+                    ></textarea>
+                </div>
+            </div>
+        </main>
+        <button id="resetBtn">Reset inputs</button>
+        <div class="fun-facts">
+            <p>Interesting facts about Morse Code:</p>
+            <ol>
+                <li>Samuel Morse invented Morse Code in the 1830s</li>
+                <li>
+                    Morse Code was heavily used for secret transmissions during
+                    WWI and WWII
+                </li>
+                <li>
+                    SOS was chosen as a distress signal because it is easily
+                    understood and transmitted as Morse Code (3 dots, 3 dashes,
+                    3 dots)
+                </li>
+            </ol>
+        </div>
+    </body>
+</html>
